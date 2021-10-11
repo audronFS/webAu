@@ -1,0 +1,296 @@
+@font-face {
+  src: url(fonts/penna.otf);
+  font-family: penna;
+}
+@font-face {
+  src: url(fonts/Eunomia-Regular.otf);
+  font-family: Eunomia;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  padding: 0;
+  background: url(images/whitepattern.jpg);
+  background-size: cover;
+  font-family: Optima, sans-serif;
+  /* background: #e4e3e3; */
+}
+
+/* CAROUSEL */
+.carousel-item {
+  height: 53vw;
+}
+
+.carousel-item img {
+  position: absolute;
+  object-fit: cover;
+  top: 0;
+  left: 0;
+  /* min-height: 500px; */
+  overflow: hidden;
+  height: 55vw;
+  max-height: 55vw;
+}
+.carousel-inner img {
+  width: 100%;
+  height: 100%;
+}
+
+h1 {
+  font-family: "Eunomia";
+}
+
+/* .img {
+    display: block;
+    width: 100%;
+    height: auto;
+    position: absolute;
+    bottom: 0;
+}*/
+
+/*------------------------------------------------------------------- 992px to xl ---------------------------------------------------------------------*/
+
+@media (min-width: 1025px) {
+  .carousel {
+    margin-top: -10vw;
+  }
+
+  /* CONTAINER 1 */
+  .container1 {
+    padding: 2.5vw;
+    padding-right: 6vw;
+    margin: 0;
+    /* width: 1598px; */
+    height: 11vw;
+    /* background-size: cover; */
+    margin-top: 4.3vw;
+    position: relative;
+  }
+  /* .aboutTitle{
+    padding-top: 80px;
+    padding-left: 330px;
+} */
+
+  #aboutMeText {
+    text-align: justify;
+    padding: 4vw;
+    padding-right: 1.5vw;
+    margin-top: 7.5vw;
+  }
+
+  #aboutMe {
+    margin-top: 5.7vw;
+  }
+  .container1 img {
+    border-radius: 5%;
+  }
+
+  /* CONTAINER 2 */
+
+  .container2 img {
+    border-radius: 5%;
+  }
+
+  h1 {
+    font-family: "Eunomia";
+  }
+
+  .container2 {
+    height: 51.4vw;
+    margin-top: 34vw;
+    position: relative;
+  }
+
+  .features {
+    margin-top: 17.5vw;
+    padding: 5.4vw;
+  }
+
+  #works {
+    margin-top: 7.4vw;
+  }
+
+  .overlay {
+    /* position: absolute; */
+    min-height: 100%;
+    min-width: 100%;
+    left: 0;
+    top: 0;
+    /* background: rgba(233, 220, 220, 0.856); */
+  }
+  /*  background: rgba(233, 220, 220, 0.856); */
+
+  /* div.wrapper {
+  position: relative;
+  width: 500px;
+} */
+  /* #wrapper img {
+  width: 100%;
+} */
+  div.title {
+    color: rgb(255, 255, 255);
+    opacity: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    text-align: center;
+    top: 50px;
+    bottom: 0;
+  }
+  div.title:hover {
+    opacity: 1;
+  }
+}
+
+/*------------------------------------------------------------------- 991px x 768px ---------------------------------------------------------------------*/
+
+/* Resolucion para tablets */
+@media (min-width: 769px) and (max-width: 1025px) {
+  .carousel {
+    margin-top: -10vw;
+  }
+
+  /* CONTAINER 1 */
+  .container1 {
+    padding: 3.5vw;
+    padding-right: 4vw;
+    margin: 0;
+    /* margin-top: 0; */
+    height: 50vw;
+    margin-top: 2.3vw;
+    position: relative;
+  }
+
+  #aboutMeText {
+    text-align: justify;
+    padding: 4vw;
+    padding-right: 1.5vw;
+    margin-top: 6vw;
+  }
+
+  #aboutMe {
+    margin-top: 5.7vw;
+  }
+  .container1 img {
+    border-radius: 5%;
+  }
+
+  /* CONTAINER 2 */
+  .container2 img {
+    border-radius: 5%;
+  }
+
+  h1 {
+    font-family: "Eunomia";
+  }
+
+  .container2 {
+    height: 49.4vw;
+    margin-top: 20vw;
+    position: relative;
+  }
+
+  .features {
+    margin-top: 17.5vw;
+    padding: 5.4vw;
+  }
+
+  #works {
+    margin-top: 7.4vw;
+  }
+
+  .overlay {
+    min-height: 100%;
+    min-width: 100%;
+    left: 0;
+    top: 0;
+    /* background: rgba(233, 220, 220, 0.856); */
+  }
+  div.title {
+    color: rgb(255, 255, 255);
+    opacity: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    text-align: center;
+    top: 50px;
+    bottom: 0;
+  }
+  div.title:hover {
+    opacity: 1;
+  }
+}
+
+/*------------------------------------------------------------------- 768px to sm ---------------------------------------------------------------------*/
+
+@media (max-width: 769px) {
+  /* CONTAINER 1 */
+  .container1 {
+    padding-top: 5.5vw;
+  }
+  .carousel-inner {
+    height: 120vw;
+  }
+  .carousel-item img {
+    height: 120vw;
+    max-height: 120vw;
+  }
+
+  #aboutMeText {
+    text-align: justify;
+    padding: 4vw;
+    /* padding-right: 1.5vw; */
+    margin-top: 3.4vw;
+    padding: 5%;
+  }
+
+  #aboutMe {
+    margin-top: 4.7vw;
+  }
+  .container1 img {
+    border-radius: 5%;
+  }
+
+  /* CONTAINER 2 */
+
+  .container2 img {
+    border-radius: 5%;
+  }
+
+  h1 {
+    font-family: "Eunomia";
+  }
+
+  .features {
+    margin-top: 5.5vw;
+    margin-bottom: 7.5vw;
+    padding: 5.4vw;
+  }
+
+  #works {
+    margin-top: 7.4vw;
+  }
+
+  .overlay {
+    min-height: 100%;
+    min-width: 100%;
+    left: 0;
+    top: 0;
+    /* background: rgba(233, 220, 220, 0.856); */
+  }
+
+  div.title {
+    color: rgb(255, 255, 255);
+    opacity: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    text-align: center;
+    /* right: 20%; */
+    top: 70%;
+    bottom: 0;
+    opacity: 1;
+  }
+}

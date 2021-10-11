@@ -1,0 +1,172 @@
+/* NAV-BAR */
+/* .navbar {
+    background:#000000;
+    z-index: 99;
+} */
+/* Resolucion para tablets */
+@media (max-width: 991px) {
+  .inline-navbar {
+    display: none;
+  }
+  .trn {
+    background: black;
+    z-index: 99;
+  }
+  .nav-link,
+  .navbar-brand {
+    color: #fff;
+    cursor: pointer;
+    font-size: 2.8em !important;
+    font-family: "Eunomia";
+    margin-left: 20%;
+  }
+  .nav-link {
+    margin-right: 1em !important;
+  }
+  .nav-link:hover {
+    color: #000;
+  }
+  .navbar-collapse {
+    justify-content: flex-end;
+  }
+
+  /* other navbar */
+  .trn2 {
+    background: transparent;
+    z-index: 99;
+  }
+  .custom-navbar.navbar {
+    /* width: inherit; */
+    top: 10%;
+  }
+  .navbar-toggler-icon {
+    height: 1em;
+  }
+  /* .custom-toggler .navbar-toggler-icon {
+    background-image: url(../images/Kopfhoererschaf.svg);
+  } */
+  /* "data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgb(3, 3, 3)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E" */
+  .custom-toggler.navbar-toggler {
+    border-color: rgb(3, 3, 3);
+  }
+  .navbar-toggler {
+    margin-left: 40%;
+    margin-bottom: 1%;
+  }
+}
+
+/* Resolucion para pc de escritorio */
+
+@media (min-width: 992px) {
+  .mobile-navbar {
+    display: none;
+  }
+  .trn {
+    background: transparent;
+    z-index: 99;
+  }
+  .nav-link,
+  .navbar-brand {
+    color: #fff;
+    cursor: pointer;
+    font-size: 2.8em !important;
+    font-family: "Eunomia";
+  }
+  .nav-link {
+    margin-right: 1em !important;
+  }
+  .nav-link:hover {
+    color: #000;
+  }
+  .navbar-collapse {
+    justify-content: flex-end;
+  }
+}
+
+/* Footer */
+
+@import url("https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
+
+.footerContainer {
+  padding-top: 35px;
+}
+
+#footer {
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  padding: 5px;
+  background: #1b1b1b !important;
+}
+
+#footer h5 {
+  padding-left: 10px;
+  /* border-left: 3px solid #eeeeee; */
+  padding-bottom: 6px;
+  margin-bottom: 10px;
+  color: #ffffff;
+}
+
+#footer .quick-links,
+#footer .h6 {
+  line-height: 1.5;
+  font-size: 13px;
+  color: #e4e4e4;
+  text-align: left;
+  vertical-align: bottom;
+  display: inline-block;
+}
+
+#footer a {
+  color: #ffffff;
+  text-decoration: none !important;
+  background-color: transparent;
+  -webkit-text-decoration-skip: objects;
+}
+#footer ul.social li {
+  padding: 5px 0;
+}
+#footer ul.social li a i {
+  margin-right: 5px;
+  font-size: 25px;
+  -webkit-transition: 0.5s all ease;
+  -moz-transition: 0.5s all ease;
+  transition: 0.5s all ease;
+}
+#footer ul.social li:hover a i {
+  font-size: 30px;
+  margin-top: -10px;
+}
+#footer ul.social li a,
+#footer ul.quick-links li a {
+  color: #ffffff;
+}
+#footer ul.social li a:hover {
+  color: #eeeeee;
+}
+#footer ul.quick-links li {
+  padding: 3px 0;
+  -webkit-transition: 0.5s all ease;
+  -moz-transition: 0.5s all ease;
+  transition: 0.5s all ease;
+}
+#footer ul.quick-links li:hover {
+  padding: 3px 0;
+  margin-left: 5px;
+  font-weight: 700;
+}
+#footer ul.quick-links li a i {
+  margin-right: 15px;
+}
+#footer ul.quick-links li:hover a i {
+  font-weight: 700;
+}
+
+@media (max-width: 767px) {
+  #footer h5 {
+    padding-left: 0;
+    border-left: transparent;
+    padding-bottom: 0px;
+    margin-bottom: 10px;
+  }
+}

@@ -1,0 +1,288 @@
+@font-face {
+  src: url(../../fonts/Eunomia-Regular.otf);
+  font-family: Eunomia;
+}
+
+@font-face {
+  src: url(../../fonts/sadgirls-gx3ep.ttf);
+  font-family: sadgirls;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+
+  background: url(../../images/whitepattern.jpg);
+  /* background-size: cover; */
+  background: #f5f5f5;
+  width: 100%;
+  height: 100%;
+  scroll-behavior: smooth;
+}
+/* .container {
+  width: 100%;
+  height: 100%;
+  } */
+
+.hero-image {
+  background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)),
+    url("../images/AuroraBW.jpg");
+  height: 74%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+.hero-text {
+  text-align: left;
+  position: absolute;
+  top: 50%;
+  left: 20%;
+  transform: translate(-50%, -50%);
+  color: black;
+}
+.hero-text p {
+  font-size: large;
+}
+
+.quote {
+  font-family: "sadgirls";
+}
+
+/* .container1 {
+  margin: auto;
+  padding: 0;
+  width: cover;
+  height: 100%;
+  position: relative;
+  margin-left: 16%;
+} */
+/* .row {
+  height: 100%;
+  width: 100%;
+} */
+
+/* #composer {
+  text-align: justify;
+  padding-top: 16%; */
+/* margin-top: 10vw; */
+/* margin-left: 20%; */
+/* } */
+/* #composerImage{
+padding-left: 50%;
+} */
+/* .imagen {
+  margin-left: 20%;
+  width: 79vw;
+  height: 100%;
+  max-height: 44.9vw;
+} */
+
+.container2 {
+  margin-top: 2%;
+  width: 100%;
+  height: 100%;
+  margin-bottom: 2%;
+}
+
+.arrow {
+  border: solid #9e9e9e;
+  border-width: 0 4px 4px 0;
+  display: inline-block;
+  padding: 3px;
+  width: 50px;
+  height: 50px;
+  margin-bottom: 6%;
+}
+
+.down {
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+}
+
+.btn1 {
+  /* margin-top: 6%; */
+  font-family: "Eunomia";
+  font-size: 35px;
+  /* margin-left: 5%; */
+  margin-bottom: -3%;
+}
+
+h3 {
+  text-align: center;
+  font-weight: 200;
+  margin-bottom: 0;
+}
+p {
+  text-align: center;
+  font-weight: 200;
+}
+
+.carousel-wrapper {
+  position: relative;
+  width: 100%;
+  height: 64%;
+  top: 35%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: transparent;
+  overflow: hidden;
+}
+.carousel-wrapper .carousel {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100%;
+  height: auto;
+}
+.carousel-wrapper .carousel .carousel-cell {
+  padding: 10px;
+  /* background-color: transparent; */
+  /* background: url(../../images/whitepattern.jpg); */
+  box-shadow: 5px 12px 39px -19px rgba(19, 18, 18, 0.75);
+  width: 28%;
+  height: auto;
+  min-width: 180px;
+  margin: 0 20px;
+  transition: transform 500ms ease;
+  border-radius: 25px;
+}
+.carousel-wrapper .carousel .carousel-cell .more {
+  display: block;
+  opacity: 0;
+  margin: 5px 0 15px 0;
+  text-align: center;
+  font-size: 10px;
+  color: #cfcfcf;
+  text-decoration: none;
+  transition: opacity 300ms ease;
+}
+.carousel-wrapper .carousel .carousel-cell .more:hover,
+.carousel-wrapper .carousel .carousel-cell .more:active,
+.carousel-wrapper .carousel .carousel-cell .more:visited,
+.carousel-wrapper .carousel .carousel-cell .more:focus {
+  color: #cfcfcf;
+  text-decoration: none;
+}
+.carousel-wrapper .carousel .carousel-cell .line {
+  position: absolute;
+  width: 2px;
+  height: 0;
+  background-color: black;
+  left: 50%;
+  margin: 5px 0 0 -1px;
+  transition: height 300ms ease;
+  display: block;
+}
+.carousel-wrapper .carousel .carousel-cell .price {
+  position: absolute;
+  font-weight: 700;
+  margin: 45px auto 0 auto;
+  left: 50%;
+  transform: translate(-50%);
+  opacity: 0;
+  transition: opacity 300ms ease 300ms;
+}
+.carousel-wrapper .carousel .carousel-cell .price sup {
+  top: 2px;
+  position: absolute;
+}
+.carousel-wrapper .carousel .carousel-cell.is-selected {
+  transform: scale(1.2);
+}
+.carousel-wrapper .carousel .carousel-cell.is-selected .line {
+  height: 35px;
+}
+.carousel-wrapper .carousel .carousel-cell.is-selected .price,
+.carousel-wrapper .carousel .carousel-cell.is-selected .more {
+  opacity: 1;
+}
+.carousel-wrapper .flickity-page-dots {
+  display: none;
+}
+.carousel-wrapper .flickity-viewport,
+.carousel-wrapper .flickity-slider {
+  overflow: visible;
+}
+
+.responsive-iframe {
+  /* position: absolute; */
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  border: none;
+  height: auto;
+  display: block;
+}
+
+.card-body {
+  /* position: absolute; */
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+/*------------------------------------------------------------------- 1328px to sm ---------------------------------------------------------------------*/
+
+@media (max-width: 1328px) {
+  #composer {
+    display: none;
+  }
+}
+
+/*------------------------------------------------------------------- 991px to sm ---------------------------------------------------------------------*/
+
+@media (max-width: 991px) {
+  .hero-image {
+    background-position: 0vw;
+  }
+  .hero-text p {
+    padding-left: 26%;
+    font-size: medium;
+  }
+  .arrow {
+    border-width: 0 2px 2px 0;
+    width: 20px;
+    height: 20px;
+  }
+  .container2 {
+    margin-top: -20%;
+    margin-bottom: -20%;
+    width: 100%;
+    height: 100%;
+  }
+
+  #sheep-bar {
+    padding-bottom: 12%;
+  }
+  #toggle {
+    background-image: url(../images/Kopfhoererschaf.svg);
+    background-repeat: no-repeat;
+    margin-left: 0;
+    margin-bottom: 10%;
+  }
+  .navbar-toggler {
+    line-height: inherit;
+  }
+
+  .btn1 {
+    font-size: 27px;
+  }
+  /* button {
+      visibility: hidden;
+    } */
+
+  /* p{
+      display: none;
+    } */
+
+  .card-text {
+    display: none;
+  }
+}
