@@ -29,3 +29,4 @@ fetch(footer)
   .then((data) => {
     document.querySelector("footer").innerHTML = data;
   });
+//hi
