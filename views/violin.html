@@ -1,344 +1,699 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Composition</title>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Composition</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css"
+    />
+    <link rel="shortcut icon" href="../images/favicon.ico" />
+    <link rel="stylesheet" type="text/css" href="./style/violin.css" />
+    <link rel="stylesheet" type="text/css" href="./style/components.css" />
+    <script>
+      (function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != "dataLayer" ? "&l=" + l : "";
+        j.async = true;
+        j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+        f.parentNode.insertBefore(j, f);
+      })(window, document, "script", "dataLayer", "GTM-54NZPDS");
+    </script>
+  </head>
 
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css" />
-  <link rel="shortcut icon" href="../images/favicon.ico" />
-  <link rel="stylesheet" type="text/css" href="./style/violin.css" />
-  <link rel="stylesheet" type="text/css" href="./style/components.css" />
-</head>
+  <body>
+    <header></header>
 
-<body>
-  <header></header>
+    <div class="container container1">
+      <h1 style="text-align: center">Violin Gallery</h1>
+      <div class="row">
+        <a
+          href="./images/gallery/MallyHannah.jpg"
+          data-toggle="lightbox"
+          data-gallery="gallery"
+          class="col-md-2"
+        >
+          <img src="./images/resized/MallyMe2R.jpg" class="img-fluid rounded" />
+        </a>
+        <a
+          href="./images/gallery/robertaMedley.jpeg"
+          data-toggle="lightbox"
+          data-gallery="gallery"
+          class="col-md-2"
+        >
+          <img
+            src="./images/resized/robertaMedley.jpg"
+            class="img-fluid rounded"
+          />
+        </a>
+        <a
+          href="./images/gallery/MallyMe2.jpg"
+          data-toggle="lightbox"
+          data-gallery="gallery"
+          class="col-md-2"
+        >
+          <img src="./images/resized/Mallyme3R.jpg" class="img-fluid rounded" />
+        </a>
 
-  <div class="container container1">
-    <h1 style="text-align: center">Violin Gallery</h1>
-    <div class="row">
-      <a href="./images/gallery/MallyHannah.jpg" data-toggle="lightbox" data-gallery="gallery" class="col-md-2">
-        <img src="./images/resized/MallyMe2R.jpg" class="img-fluid rounded" />
-      </a>
-      <a href="./images/gallery/robertaMedley.jpeg" data-toggle="lightbox" data-gallery="gallery" class="col-md-2">
-        <img src="./images/resized/robertaMedley.jpg" class="img-fluid rounded" />
-      </a>
-      <a href="./images/gallery/MallyMe2.jpg" data-toggle="lightbox" data-gallery="gallery" class="col-md-2">
-        <img src="./images/resized/Mallyme3R.jpg" class="img-fluid rounded" />
-      </a>
-
-      <a href="./images/gallery/orquestaToledo.JPG" data-toggle="lightbox" data-gallery="gallery" class="col-md-2">
-        <img src="./images/resized/orqToledo.jpg" class="img-fluid rounded" />
-        <div class="img-text" style="font-size: x-large">Ensembles</div>
-      </a>
-      <a href="./images/gallery/duoAisse2.jpeg" data-toggle="lightbox" data-gallery="gallery" class="col-md-2">
-        <img src="./images/resized/duoAisse2R.jpg" class="img-fluid rounded" />
-      </a>
-      <a href="./images/gallery/HIfiddlers.jpg" data-toggle="lightbox" data-gallery="gallery" class="col-md-2">
-        <img src="./images/resized/HIfiddlerR.jpg" class="img-fluid rounded" />
-      </a>
+        <a
+          href="./images/gallery/orquestaToledo.JPG"
+          data-toggle="lightbox"
+          data-gallery="gallery"
+          class="col-md-2"
+        >
+          <img src="./images/resized/orqToledo.jpg" class="img-fluid rounded" />
+          <div class="img-text" style="font-size: x-large">Ensembles</div>
+        </a>
+        <a
+          href="./images/gallery/duoAisse2.jpeg"
+          data-toggle="lightbox"
+          data-gallery="gallery"
+          class="col-md-2"
+        >
+          <img
+            src="./images/resized/duoAisse2R.jpg"
+            class="img-fluid rounded"
+          />
+        </a>
+        <a
+          href="./images/gallery/HIfiddlers.jpg"
+          data-toggle="lightbox"
+          data-gallery="gallery"
+          class="col-md-2"
+        >
+          <img
+            src="./images/resized/HIfiddlerR.jpg"
+            class="img-fluid rounded"
+          />
+        </a>
+      </div>
+      <div class="row">
+        <a
+          href="./images/gallery/HIchurch2.jpg"
+          data-toggle="lightbox"
+          data-gallery="gallery"
+          class="col-md-4"
+        >
+          <img
+            src="./images/resized/HIchurch2R.jpg"
+            class="img-fluid rounded"
+          />
+          <div class="img-text">Hazel Iris</div>
+        </a>
+        <a
+          href="./images/gallery/me.jpeg"
+          data-toggle="lightbox"
+          data-gallery="gallery"
+          class="col-md-4"
+        >
+          <img src="./images/resized/meR.jpg" class="img-fluid rounded" />
+        </a>
+        <a
+          href="./images/gallery/mally3.jpeg"
+          data-toggle="lightbox"
+          data-gallery="gallery"
+          class="col-md-4"
+        >
+          <img src="./images/resized/MallyAllR.jpg" class="img-fluid rounded" />
+          <div class="img-text">Mally Harpaz</div>
+        </a>
+      </div>
+      <div class="row">
+        <a
+          href="./images/gallery/MallyJames.JPG"
+          data-toggle="lightbox"
+          data-gallery="gallery"
+          class="col-md-3"
+        >
+          <img
+            src="./images/resized/MallyJamesR.jpg"
+            class="img-fluid rounded"
+          />
+        </a>
+        <a
+          href="./images/gallery/RMmercado.jpg"
+          data-toggle="lightbox"
+          data-gallery="gallery"
+          class="col-md-3"
+        >
+          <img
+            src="./images/resized/RMmercadoR.jpg"
+            class="img-fluid rounded"
+          />
+          <div class="img-text" style="font-size: x-large">Roberta Medley</div>
+        </a>
+        <a
+          href="./images/gallery/MallyMe4.jpg"
+          data-toggle="lightbox"
+          data-gallery="gallery"
+          class="col-md-3"
+        >
+          <img src="./images/resized/MallyMe5R.jpg" class="img-fluid rounded" />
+        </a>
+        <a
+          href="./images/gallery/duoAisse.jpeg"
+          data-toggle="lightbox"
+          data-gallery="gallery"
+          class="col-md-3"
+        >
+          <img src="./images/resized/duoAisseR.jpg" class="img-fluid rounded" />
+          <div class="img-text" style="font-size: x-large">Duo Aisse</div>
+        </a>
+      </div>
+      <div class="row">
+        <a
+          href="./images/gallery/HIchurch.jpg"
+          data-toggle="lightbox"
+          data-gallery="gallery"
+          class="col-md-2"
+        >
+          <img src="./images/resized/HImeR.jpg" class="img-fluid rounded" />
+        </a>
+        <a
+          href="./images/gallery/auditorionational.jpg"
+          data-toggle="lightbox"
+          data-gallery="gallery"
+          class="col-md-2"
+        >
+          <img
+            src="./images/resized/auditorionationalR.jpg"
+            class="img-fluid rounded"
+          />
+          <div class="img-text" style="font-size: x-large">Orchestras</div>
+        </a>
+        <a
+          href="./images/gallery/mally2.jpeg"
+          data-toggle="lightbox"
+          data-gallery="gallery"
+          class="col-md-2"
+        >
+          <img src="./images/resized/mally2.jpg" class="img-fluid rounded" />
+        </a>
+        <a
+          href="./images/gallery/MallyMe.jpg"
+          data-toggle="lightbox"
+          data-gallery="gallery"
+          class="col-md-2"
+        >
+          <img src="./images/resized/MallyMeR.jpg" class="img-fluid rounded" />
+        </a>
+        <a
+          href="./images/gallery/casmodia.jpeg"
+          data-toggle="lightbox"
+          data-gallery="gallery"
+          class="col-md-2"
+        >
+          <img src="./images/resized/casmodiaR.jpg" class="img-fluid rounded" />
+          <div class="img-text" style="font-size: x-large">Casmodia</div>
+        </a>
+        <a
+          href="./images/gallery/MallyMe3.jpg"
+          data-toggle="lightbox"
+          data-gallery="gallery"
+          class="col-md-2"
+        >
+          <img src="./images/resized/MallyMe4R.jpg" class="img-fluid rounded" />
+        </a>
+      </div>
     </div>
-    <div class="row">
-      <a href="./images/gallery/HIchurch2.jpg" data-toggle="lightbox" data-gallery="gallery" class="col-md-4">
-        <img src="./images/resized/HIchurch2R.jpg" class="img-fluid rounded" />
-        <div class="img-text">Hazel Iris</div>
-      </a>
-      <a href="./images/gallery/me.jpeg" data-toggle="lightbox" data-gallery="gallery" class="col-md-4">
-        <img src="./images/resized/meR.jpg" class="img-fluid rounded" />
-      </a>
-      <a href="./images/gallery/mally3.jpeg" data-toggle="lightbox" data-gallery="gallery" class="col-md-4">
-        <img src="./images/resized/MallyAllR.jpg" class="img-fluid rounded" />
-        <div class="img-text">Mally Harpaz</div>
-      </a>
-    </div>
-    <div class="row">
-      <a href="./images/gallery/MallyJames.JPG" data-toggle="lightbox" data-gallery="gallery" class="col-md-3">
-        <img src="./images/resized/MallyJamesR.jpg" class="img-fluid rounded" />
-      </a>
-      <a href="./images/gallery/RMmercado.jpg" data-toggle="lightbox" data-gallery="gallery" class="col-md-3">
-        <img src="./images/resized/RMmercadoR.jpg" class="img-fluid rounded" />
-        <div class="img-text" style="font-size: x-large">Roberta Medley</div>
-      </a>
-      <a href="./images/gallery/MallyMe4.jpg" data-toggle="lightbox" data-gallery="gallery" class="col-md-3">
-        <img src="./images/resized/MallyMe5R.jpg" class="img-fluid rounded" />
-      </a>
-      <a href="./images/gallery/duoAisse.jpeg" data-toggle="lightbox" data-gallery="gallery" class="col-md-3">
-        <img src="./images/resized/duoAisseR.jpg" class="img-fluid rounded" />
-        <div class="img-text" style="font-size: x-large">Duo Aisse</div>
-      </a>
-    </div>
-    <div class="row">
-      <a href="./images/gallery/HIchurch.jpg" data-toggle="lightbox" data-gallery="gallery" class="col-md-2">
-        <img src="./images/resized/HImeR.jpg" class="img-fluid rounded" />
-      </a>
-      <a href="./images/gallery/auditorionational.jpg" data-toggle="lightbox" data-gallery="gallery" class="col-md-2">
-        <img src="./images/resized/auditorionationalR.jpg" class="img-fluid rounded" />
-        <div class="img-text" style="font-size: x-large">Orchestras</div>
-      </a>
-      <a href="./images/gallery/mally2.jpeg" data-toggle="lightbox" data-gallery="gallery" class="col-md-2">
-        <img src="./images/resized/mally2.jpg" class="img-fluid rounded" />
-      </a>
-      <a href="./images/gallery/MallyMe.jpg" data-toggle="lightbox" data-gallery="gallery" class="col-md-2">
-        <img src="./images/resized/MallyMeR.jpg" class="img-fluid rounded" />
-      </a>
-      <a href="./images/gallery/casmodia.jpeg" data-toggle="lightbox" data-gallery="gallery" class="col-md-2">
-        <img src="./images/resized/casmodiaR.jpg" class="img-fluid rounded" />
-        <div class="img-text" style="font-size: x-large">Casmodia</div>
-      </a>
-      <a href="./images/gallery/MallyMe3.jpg" data-toggle="lightbox" data-gallery="gallery" class="col-md-2">
-        <img src="./images/resized/MallyMe4R.jpg" class="img-fluid rounded" />
-      </a>
-    </div>
-  </div>
-  <br /><br />
+    <br /><br />
 
-  <div class="container container2">
-    <div class="row" style="padding-left: 5%; padding-right: 5%">
-      <!-- Grid column -->
-      <div class="col-lg-4 col-md-6 mb-4">
-        <div class="modal fade" id="modal5" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
-          aria-hidden="true">
-          <div class="modal-dialog modal-lg" role="document">
-            <div class="modal-content">
-              <div class="modal-body mb-0 p-0">
-                <div class="
+    <div class="container container2">
+      <div class="row" style="padding-left: 5%; padding-right: 5%">
+        <!-- Grid column -->
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div
+            class="modal fade"
+            id="modal5"
+            tabindex="-1"
+            role="dialog"
+            aria-labelledby="myModalLabel"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog modal-lg" role="document">
+              <div class="modal-content">
+                <div class="modal-body mb-0 p-0">
+                  <div
+                    class="
                       embed-responsive embed-responsive-16by9
                       z-depth-1-half
-                    ">
-                  <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/a96ZhgSrkIA"
-                    allowfullscreen></iframe>
+                    "
+                  >
+                    <iframe
+                      class="embed-responsive-item"
+                      src="https://www.youtube.com/embed/a96ZhgSrkIA"
+                      allowfullscreen
+                    ></iframe>
+                  </div>
                 </div>
-              </div>
-              <div class="modal-footer justify-content-center">
-                <span class="mr-4">Hazel Iris</span>
-                <a href="https://www.facebook.com/hazelirismusic" type="button" class="btn-floating btn-sm btn-fb"><i
-                    class="fab fa-facebook-f"></i></a>
-                <a href="https://www.instagram.com/hazelirismusic/" type="button" class="btn-floating btn-sm btn-in"><i
-                    class="fab fa-instagram"></i></a>
-                <a href="https://www.hazel-iris.com/" type="button" class="btn-floating btn-sm btn-gplus"><i
-                    class="fas fa-globe"></i></a>
-                <button type="button" class="btn btn-outline-primary btn-rounded btn-md ml-4" data-dismiss="modal">
-                  Close
-                </button>
+                <div class="modal-footer justify-content-center">
+                  <span class="mr-4">Hazel Iris</span>
+                  <a
+                    href="https://www.facebook.com/hazelirismusic"
+                    type="button"
+                    class="btn-floating btn-sm btn-fb"
+                    ><i class="fab fa-facebook-f"></i
+                  ></a>
+                  <a
+                    href="https://www.instagram.com/hazelirismusic/"
+                    type="button"
+                    class="btn-floating btn-sm btn-in"
+                    ><i class="fab fa-instagram"></i
+                  ></a>
+                  <a
+                    href="https://www.hazel-iris.com/"
+                    type="button"
+                    class="btn-floating btn-sm btn-gplus"
+                    ><i class="fas fa-globe"></i
+                  ></a>
+                  <button
+                    type="button"
+                    class="btn btn-outline-primary btn-rounded btn-md ml-4"
+                    data-dismiss="modal"
+                  >
+                    Close
+                  </button>
+                </div>
               </div>
             </div>
           </div>
+          <a
+            ><img
+              class="img-fluid z-depth-1"
+              src="./images/resized/videos/HI.jpg"
+              alt="video"
+              data-toggle="modal"
+              data-target="#modal5"
+          /></a>
         </div>
-        <a><img class="img-fluid z-depth-1" src="./images/resized/videos/HI.jpg" alt="video" data-toggle="modal"
-            data-target="#modal5" /></a>
-      </div>
-      <!-- Grid column -->
-      <div class="col-lg-4 col-md-12 mb-4">
-        <div class="modal fade" id="modal4" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
-          aria-hidden="true">
-          <div class="modal-dialog modal-lg" role="document">
-            <div class="modal-content">
-              <div class="modal-body mb-0 p-0">
-                <div class="
+        <!-- Grid column -->
+        <div class="col-lg-4 col-md-12 mb-4">
+          <div
+            class="modal fade"
+            id="modal4"
+            tabindex="-1"
+            role="dialog"
+            aria-labelledby="myModalLabel"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog modal-lg" role="document">
+              <div class="modal-content">
+                <div class="modal-body mb-0 p-0">
+                  <div
+                    class="
                       embed-responsive embed-responsive-16by9
                       z-depth-1-half
-                    ">
-                  <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/DFoNtJ6N0LQ"
-                    allowfullscreen></iframe>
+                    "
+                  >
+                    <iframe
+                      class="embed-responsive-item"
+                      src="https://www.youtube.com/embed/DFoNtJ6N0LQ"
+                      allowfullscreen
+                    ></iframe>
+                  </div>
                 </div>
-              </div>
-              <div class="modal-footer justify-content-center">
-                <span class="mr-4">Mally Harpaz</span>
-                <a href="https://www.facebook.com/mally.drummer" type="button" class="btn-floating btn-sm btn-fb"><i
-                    class="fab fa-facebook-f"></i></a>
-                <a href="https://www.instagram.com/mally.harpaz/" type="button" class="btn-floating btn-sm btn-tw"><i
-                    class="fab fa-instagram"></i></a>
-                <a href="http://www.mallyharpazmusic.co.uk/" type="button" class="btn-floating btn-sm btn-gplus"><i
-                    class="fas fa-globe"></i></a>
-                <button type="button" class="btn btn-outline-primary btn-rounded btn-md ml-4" data-dismiss="modal">
-                  Close
-                </button>
+                <div class="modal-footer justify-content-center">
+                  <span class="mr-4">Mally Harpaz</span>
+                  <a
+                    href="https://www.facebook.com/mally.drummer"
+                    type="button"
+                    class="btn-floating btn-sm btn-fb"
+                    ><i class="fab fa-facebook-f"></i
+                  ></a>
+                  <a
+                    href="https://www.instagram.com/mally.harpaz/"
+                    type="button"
+                    class="btn-floating btn-sm btn-tw"
+                    ><i class="fab fa-instagram"></i
+                  ></a>
+                  <a
+                    href="http://www.mallyharpazmusic.co.uk/"
+                    type="button"
+                    class="btn-floating btn-sm btn-gplus"
+                    ><i class="fas fa-globe"></i
+                  ></a>
+                  <button
+                    type="button"
+                    class="btn btn-outline-primary btn-rounded btn-md ml-4"
+                    data-dismiss="modal"
+                  >
+                    Close
+                  </button>
+                </div>
               </div>
             </div>
           </div>
+          <a
+            ><img
+              class="img-fluid z-depth-1"
+              src="./images/resized/videos/mally.jpg"
+              alt="video"
+              data-toggle="modal"
+              data-target="#modal4"
+          /></a>
         </div>
-        <a><img class="img-fluid z-depth-1" src="./images/resized/videos/mally.jpg" alt="video" data-toggle="modal"
-            data-target="#modal4" /></a>
-      </div>
-      <!-- Grid column -->
-      <div class="col-lg-4 col-md-6 mb-4">
-        <div class="modal fade" id="modal10" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
-          aria-hidden="true">
-          <div class="modal-dialog modal-lg" role="document">
-            <div class="modal-content">
-              <div class="modal-body mb-0 p-0">
-                <div class="
+        <!-- Grid column -->
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div
+            class="modal fade"
+            id="modal10"
+            tabindex="-1"
+            role="dialog"
+            aria-labelledby="myModalLabel"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog modal-lg" role="document">
+              <div class="modal-content">
+                <div class="modal-body mb-0 p-0">
+                  <div
+                    class="
                       embed-responsive embed-responsive-16by9
                       z-depth-1-half
-                    ">
-                  <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/RpiPgTEhD6Y"
-                    allowfullscreen></iframe>
-                </div>
-              </div>
-              <div class="modal-footer justify-content-center">
-                <span class="mr-4">Monster's Abyss</span>
-                <a href="https://www.facebook.com/monstersabyss" type="button" class="btn-floating btn-sm btn-fb"><i
-                    class="fab fa-facebook-f"></i></a>
-                <a href="https://www.instagram.com/monstersabyss/" type="button" class="btn-floating btn-sm btn-tw"><i
-                    class="fab fa-instagram"></i></a>
-                <a href="http://monstersabyss.com/" type="button" class="btn-floating btn-sm btn-gplus"><i
-                    class="fas fa-globe"></i></a>
-                <button type="button" class="btn btn-outline-primary btn-rounded btn-md ml-4" data-dismiss="modal">
-                  Close
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
-        <a><img class="img-fluid z-depth-1" src="./images/resized/videos/monstersabyss.png" alt="video"
-            data-toggle="modal" data-target="#modal10" /></a>
-      </div>
-      <!-- Grid column -->
-    </div>
-    <div class="container container3">
-      <div class="row" style="padding-left: 6%; padding-right: 6%">
-        <!-- Grid column -->
-        <div class="col-lg-3 col-md-12 mb-3">
-          <div class="modal fade" id="modal3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
-            aria-hidden="true">
-            <div class="modal-dialog modal-lg" role="document">
-              <div class="modal-content">
-                <div class="modal-body mb-0 p-0">
-                  <div class="
-                        embed-responsive embed-responsive-16by9
-                        z-depth-1-half
-                      ">
-                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/zBMOMCgk2A4"
-                      allowfullscreen></iframe>
+                    "
+                  >
+                    <iframe
+                      class="embed-responsive-item"
+                      src="https://www.youtube.com/embed/RpiPgTEhD6Y"
+                      allowfullscreen
+                    ></iframe>
                   </div>
                 </div>
                 <div class="modal-footer justify-content-center">
-                  <span class="mr-4">Roberta Medley</span>
-                  <a href="https://www.facebook.com/RobertaMedley.band" type="button"
-                    class="btn-floating btn-sm btn-fb"><i class="fab fa-facebook-f"></i></a>
-                  <a href="https://www.instagram.com/explore/tags/robertamedley/" type="button"
-                    class="btn-floating btn-sm btn-tw"><i class="fab fa-instagram"></i></a>
-                  <a href="https://soundcloud.com/roberta-medley" type="button" class="btn-floating btn-sm btn-gplus"><i
-                      class="fas fa-music"></i></a>
-                  <button type="button" class="btn btn-outline-primary btn-rounded btn-md ml-4" data-dismiss="modal">
+                  <span class="mr-4">Monster's Abyss</span>
+                  <a
+                    href="https://www.facebook.com/monstersabyss"
+                    type="button"
+                    class="btn-floating btn-sm btn-fb"
+                    ><i class="fab fa-facebook-f"></i
+                  ></a>
+                  <a
+                    href="https://www.instagram.com/monstersabyss/"
+                    type="button"
+                    class="btn-floating btn-sm btn-tw"
+                    ><i class="fab fa-instagram"></i
+                  ></a>
+                  <a
+                    href="http://monstersabyss.com/"
+                    type="button"
+                    class="btn-floating btn-sm btn-gplus"
+                    ><i class="fas fa-globe"></i
+                  ></a>
+                  <button
+                    type="button"
+                    class="btn btn-outline-primary btn-rounded btn-md ml-4"
+                    data-dismiss="modal"
+                  >
                     Close
                   </button>
                 </div>
               </div>
             </div>
           </div>
-          <a><img class="img-fluid z-depth-1" src="./images/resized/videos/robertaM.png" alt="video" data-toggle="modal"
-              data-target="#modal3" /></a>
-        </div>
-        <!-- Grid column -->
-        <div class="col-lg-3 col-md-6 mb-3">
-          <div class="modal fade" id="modal8" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
-            aria-hidden="true">
-            <div class="modal-dialog modal-lg" role="document">
-              <div class="modal-content">
-                <div class="modal-body mb-0 p-0">
-                  <div class="
-                        embed-responsive embed-responsive-16by9
-                        z-depth-1-half
-                      ">
-                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/xfaSy0THWiw"
-                      allowfullscreen></iframe>
-                  </div>
-                </div>
-                <div class="modal-footer justify-content-center">
-                  <span class="mr-4">Casmodia/Lucía Jiro</span>
-                  <a href="https://www.facebook.com/casmodia" type="button" class="btn-floating btn-sm btn-fb"><i
-                      class="fab fa-facebook-f"></i></a>
-                  <a href="https://www.instagram.com/lucia.jiro/" type="button" class="btn-floating btn-sm btn-tw"><i
-                      class="fab fa-instagram"></i></a>
-                  <a href="https://www.youtube.com/user/casmodiamusic" type="button"
-                    class="btn-floating btn-sm btn-gplus"><i class="fas fa-music"></i></a>
-                  <button type="button" class="btn btn-outline-primary btn-rounded btn-md ml-4" data-dismiss="modal">
-                    Close
-                  </button>
-                </div>
-              </div>
-            </div>
-          </div>
-          <a><img class="img-fluid z-depth-1" src="./images/resized/videos/casmodia.png" alt="video" data-toggle="modal"
-              data-target="#modal8" /></a>
-        </div>
-        <!-- Grid column -->
-        <div class="col-lg-3 col-md-12 mb-3">
-          <div class="modal fade" id="modal6" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
-            aria-hidden="true">
-            <div class="modal-dialog modal-lg" role="document">
-              <div class="modal-content">
-                <div class="modal-body mb-0 p-0">
-                  <div class="
-                        embed-responsive embed-responsive-16by9
-                        z-depth-1-half
-                      ">
-                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/bV9QqseFP_Q"
-                      allowfullscreen></iframe>
-                  </div>
-                </div>
-                <div class="modal-footer justify-content-center">
-                  <span class="mr-4">Duo Aisse</span>
-                  <button type="button" class="btn btn-outline-primary btn-rounded btn-md ml-4" data-dismiss="modal">
-                    Close
-                  </button>
-                </div>
-              </div>
-            </div>
-          </div>
-          <a><img class="img-fluid z-depth-1" src="./images/resized/videos/duoAisse.png" alt="video" data-toggle="modal"
-              data-target="#modal6" /></a>
-        </div>
-        <!-- Grid column -->
-        <div class="col-lg-3 col-md-6 mb-3">
-          <div class="modal fade" id="modal7" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
-            aria-hidden="true">
-            <div class="modal-dialog modal-lg" role="document">
-              <div class="modal-content">
-                <div class="modal-body mb-0 p-0">
-                  <div class="
-                        embed-responsive embed-responsive-16by9
-                        z-depth-1-half
-                      ">
-                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/LD4rt8HNVjM"
-                      allowfullscreen></iframe>
-                  </div>
-                </div>
-                <div class="modal-footer justify-content-center">
-                  <span class="mr-4">Spread the word!</span>
-                  <a href="https://www.facebook.com/aurora.delrio" type="button" class="btn-floating btn-sm btn-fb"><i
-                      class="fab fa-facebook-f"></i></a>
-                  <a href="https://www.instagram.com/aurora_abyss/" type="button" class="btn-floating btn-sm btn-tw"><i
-                      class="fab fa-instagram"></i></a>
-                  <a href="https://www.youtube.com/channel/UC71H_mUWXgQCxug9VbROxeA/videos" type="button"
-                    class="btn-floating btn-sm btn-gplus"><i class="fas fa-music"></i></a>
-                  <button type="button" class="btn btn-outline-primary btn-rounded btn-md ml-4" data-dismiss="modal">
-                    Close
-                  </button>
-                </div>
-              </div>
-            </div>
-          </div>
-          <a><img class="img-fluid z-depth-1" src="./images/resized/videos/watering.png" alt="video" data-toggle="modal"
-              data-target="#modal7" /></a>
+          <a
+            ><img
+              class="img-fluid z-depth-1"
+              src="./images/resized/videos/monstersabyss.png"
+              alt="video"
+              data-toggle="modal"
+              data-target="#modal10"
+          /></a>
         </div>
         <!-- Grid column -->
       </div>
+      <div class="container container3">
+        <div class="row" style="padding-left: 6%; padding-right: 6%">
+          <!-- Grid column -->
+          <div class="col-lg-3 col-md-12 mb-3">
+            <div
+              class="modal fade"
+              id="modal3"
+              tabindex="-1"
+              role="dialog"
+              aria-labelledby="myModalLabel"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog modal-lg" role="document">
+                <div class="modal-content">
+                  <div class="modal-body mb-0 p-0">
+                    <div
+                      class="
+                        embed-responsive embed-responsive-16by9
+                        z-depth-1-half
+                      "
+                    >
+                      <iframe
+                        class="embed-responsive-item"
+                        src="https://www.youtube.com/embed/zBMOMCgk2A4"
+                        allowfullscreen
+                      ></iframe>
+                    </div>
+                  </div>
+                  <div class="modal-footer justify-content-center">
+                    <span class="mr-4">Roberta Medley</span>
+                    <a
+                      href="https://www.facebook.com/RobertaMedley.band"
+                      type="button"
+                      class="btn-floating btn-sm btn-fb"
+                      ><i class="fab fa-facebook-f"></i
+                    ></a>
+                    <a
+                      href="https://www.instagram.com/explore/tags/robertamedley/"
+                      type="button"
+                      class="btn-floating btn-sm btn-tw"
+                      ><i class="fab fa-instagram"></i
+                    ></a>
+                    <a
+                      href="https://soundcloud.com/roberta-medley"
+                      type="button"
+                      class="btn-floating btn-sm btn-gplus"
+                      ><i class="fas fa-music"></i
+                    ></a>
+                    <button
+                      type="button"
+                      class="btn btn-outline-primary btn-rounded btn-md ml-4"
+                      data-dismiss="modal"
+                    >
+                      Close
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <a
+              ><img
+                class="img-fluid z-depth-1"
+                src="./images/resized/videos/robertaM.png"
+                alt="video"
+                data-toggle="modal"
+                data-target="#modal3"
+            /></a>
+          </div>
+          <!-- Grid column -->
+          <div class="col-lg-3 col-md-6 mb-3">
+            <div
+              class="modal fade"
+              id="modal8"
+              tabindex="-1"
+              role="dialog"
+              aria-labelledby="myModalLabel"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog modal-lg" role="document">
+                <div class="modal-content">
+                  <div class="modal-body mb-0 p-0">
+                    <div
+                      class="
+                        embed-responsive embed-responsive-16by9
+                        z-depth-1-half
+                      "
+                    >
+                      <iframe
+                        class="embed-responsive-item"
+                        src="https://www.youtube.com/embed/xfaSy0THWiw"
+                        allowfullscreen
+                      ></iframe>
+                    </div>
+                  </div>
+                  <div class="modal-footer justify-content-center">
+                    <span class="mr-4">Casmodia/Lucía Jiro</span>
+                    <a
+                      href="https://www.facebook.com/casmodia"
+                      type="button"
+                      class="btn-floating btn-sm btn-fb"
+                      ><i class="fab fa-facebook-f"></i
+                    ></a>
+                    <a
+                      href="https://www.instagram.com/lucia.jiro/"
+                      type="button"
+                      class="btn-floating btn-sm btn-tw"
+                      ><i class="fab fa-instagram"></i
+                    ></a>
+                    <a
+                      href="https://www.youtube.com/user/casmodiamusic"
+                      type="button"
+                      class="btn-floating btn-sm btn-gplus"
+                      ><i class="fas fa-music"></i
+                    ></a>
+                    <button
+                      type="button"
+                      class="btn btn-outline-primary btn-rounded btn-md ml-4"
+                      data-dismiss="modal"
+                    >
+                      Close
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <a
+              ><img
+                class="img-fluid z-depth-1"
+                src="./images/resized/videos/casmodia.png"
+                alt="video"
+                data-toggle="modal"
+                data-target="#modal8"
+            /></a>
+          </div>
+          <!-- Grid column -->
+          <div class="col-lg-3 col-md-12 mb-3">
+            <div
+              class="modal fade"
+              id="modal6"
+              tabindex="-1"
+              role="dialog"
+              aria-labelledby="myModalLabel"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog modal-lg" role="document">
+                <div class="modal-content">
+                  <div class="modal-body mb-0 p-0">
+                    <div
+                      class="
+                        embed-responsive embed-responsive-16by9
+                        z-depth-1-half
+                      "
+                    >
+                      <iframe
+                        class="embed-responsive-item"
+                        src="https://www.youtube.com/embed/bV9QqseFP_Q"
+                        allowfullscreen
+                      ></iframe>
+                    </div>
+                  </div>
+                  <div class="modal-footer justify-content-center">
+                    <span class="mr-4">Duo Aisse</span>
+                    <button
+                      type="button"
+                      class="btn btn-outline-primary btn-rounded btn-md ml-4"
+                      data-dismiss="modal"
+                    >
+                      Close
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <a
+              ><img
+                class="img-fluid z-depth-1"
+                src="./images/resized/videos/duoAisse.png"
+                alt="video"
+                data-toggle="modal"
+                data-target="#modal6"
+            /></a>
+          </div>
+          <!-- Grid column -->
+          <div class="col-lg-3 col-md-6 mb-3">
+            <div
+              class="modal fade"
+              id="modal7"
+              tabindex="-1"
+              role="dialog"
+              aria-labelledby="myModalLabel"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog modal-lg" role="document">
+                <div class="modal-content">
+                  <div class="modal-body mb-0 p-0">
+                    <div
+                      class="
+                        embed-responsive embed-responsive-16by9
+                        z-depth-1-half
+                      "
+                    >
+                      <iframe
+                        class="embed-responsive-item"
+                        src="https://www.youtube.com/embed/LD4rt8HNVjM"
+                        allowfullscreen
+                      ></iframe>
+                    </div>
+                  </div>
+                  <div class="modal-footer justify-content-center">
+                    <span class="mr-4">Spread the word!</span>
+                    <a
+                      href="https://www.facebook.com/aurora.delrio"
+                      type="button"
+                      class="btn-floating btn-sm btn-fb"
+                      ><i class="fab fa-facebook-f"></i
+                    ></a>
+                    <a
+                      href="https://www.instagram.com/aurora_abyss/"
+                      type="button"
+                      class="btn-floating btn-sm btn-tw"
+                      ><i class="fab fa-instagram"></i
+                    ></a>
+                    <a
+                      href="https://www.youtube.com/channel/UC71H_mUWXgQCxug9VbROxeA/videos"
+                      type="button"
+                      class="btn-floating btn-sm btn-gplus"
+                      ><i class="fas fa-music"></i
+                    ></a>
+                    <button
+                      type="button"
+                      class="btn btn-outline-primary btn-rounded btn-md ml-4"
+                      data-dismiss="modal"
+                    >
+                      Close
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <a
+              ><img
+                class="img-fluid z-depth-1"
+                src="./images/resized/videos/watering.png"
+                alt="video"
+                data-toggle="modal"
+                data-target="#modal7"
+            /></a>
+          </div>
+          <!-- Grid column -->
+        </div>
+      </div>
     </div>
-  </div>
 
-  <footer></footer>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.min.js"></script>
-  <script src="./violin.js"></script>
-  <script src="../main.js"></script>
-</body>
-
+    <footer></footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.min.js"></script>
+    <script src="./violin.js"></script>
+    <script src="../main.js"></script>
+  </body>
 </html>
